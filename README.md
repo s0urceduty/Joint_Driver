@@ -22,5 +22,5 @@ Lastly, Optimation’s influence is especially evident in classes like Trade-off
 #
 
 [Joint Driver](https://chatgpt.com/g/g-67c344a88d508191a745afb345541d4c-joint-driver)
-[<br>
+<br>
 [Optimation Math](https://chatgpt.com/g/g-6782f9139b9c8191af0f5656d669a80b-optimation-math)
