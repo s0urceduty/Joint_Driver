@@ -1,0 +1,117 @@
+===========================================================================
+Joint Driver Framework
+===========================================================================
+
+X = f(Y) 
+
+Where f is a linear combination of the outputs (values created by applying input parameters to each operation class within a Joint Driver model), with weights determined based on their importance or contribution to the overall goal/objective being optimized for that specific application instance. 
+
+The values are generated as follows:
+
+Operation Class i = g_i(Input Parameters)
+
+Where gi is a function defining how each individual operation class creates its value output (Xi) given certain input parameters from other models, variables Y1,...,Yn or constants C1,...,Ck.
+
+The final equation becomes:  X = f(Y; {g_i}, {C}) where the sum of all Xi terms is weighted by coefficients determined based on their relative importance to optimizing some objective function. This allows us to create a flexible framework that can be adapted to any problem domain simply by defining appropriate functions gi and weights for each operation class within Joint Driver, with inputs Y1,...,Yn coming from other models or variables as needed depending on the specific application at hand.
+
+The key advantages of Joint Driver are:
+
+1. Flexibility: The model is highly adaptable to different domains/problems just by changing the definitions of {g_i} and their weights in f(Y) 
+2. Efficiency: Only computes values for Xi when actually needed, avoiding precomputing large datasets beforehand like traditional methods  
+3. Scalability: Can handle very high dimensional input spaces as long as we can define appropriate gi functions to map them into the desired output space
+
+Some potential applications of Joint Driver could be:
+
+1. Optimization problems in machine learning where each operation class represents a different regularization term or loss function component, with weights determined by cross-validation on training data.
+2. Scientific simulations and modeling where Xi values represent physical quantities like temperature, pressure, velocity etc., calculated based on governing equations gi(Y) for the specific system being modeled.
+3. Financial risk management models where each operation class represents a different type of financial instrument or market factor (e.g. interest rates, exchange rates), with weights determined by portfolio optimization techniques.
+
+This joint driver framework provides an elegant and efficient way to define complex dynamic systems that can be adapted to solve diverse problems across many domains simply by defining appropriate functions gi for each operation class within the model's core structure of X = f(Y). The ability to compute values on demand as needed while dynamically adjusting weights based on problem-specific criteria makes it a powerful tool with broad applicability.
+
+================= Classes for Joint Driver ==========================================================
+
+List Class:
+
+			Input Parameters: 
+
+			- A list 'a' of elements.  
+			- An integer n specifying how many elements from a should be included in the output list.
+
+			Output Value X = g(a,n) where gi is defined as follows:
+
+			1. If n <= len(a), then return [ai for i in range(n)] 
+			2. Otherwise, if n > len(a), then return []
+
+Prime Class  
+
+			Input Parameters: An integer 'X' specifying the upper bound of primes to generate.
+
+			Output Value X = g(X) where gi is defined as follows:
+
+			1. Return a list containing all prime numbers less than or equal to X, generated using an efficient primality test algorithm like Sieve of Eratosthenes.
+
+Float Class  
+
+			Input Parameters: A floating-point number 'X' specifying the upper bound for Fibonacci generation. 
+
+			Output Value X = g(X) where gi is defined as follows:
+
+			1. Generate a dictionary D with keys from 0 to floor(X), and values being their corresponding Fibonacci numbers, calculated using an iterative approach starting from F[0] = 0, F[1] = 1 until reaching the desired upper bound X.
+
+Power Class  
+
+			Input Parameters: A positive integer 'X' specifying the maximum power of 2 to generate.
+
+			Output Value X = g(X) where gi is defined as follows:
+
+			1. Return an array containing powers of 2 from 0 up to log₂(X), rounded down, using bitwise operations for efficiency (e.g., a[i] = 1 << i).
+
+Array Class  
+
+			Input Parameters: A real number 'X' specifying the range bounds (-X ≤ X) inclusive for integer generation.
+
+			Output Value X = g(-X,X) where gi is defined as follows:
+
+			1. Return an array containing all integers from -floor(X) up to ceil(X), rounded down and up respectively using built-in functions like floor() or round().
+
+Geater Class  
+
+			Input Parameters: A positive integer 'X' specifying the upper bound for divisor generation. 
+
+			Output Value X = g(X) where gi is defined as follows:
+
+			1. Return an array containing all divisors of X less than or equal to its square root rounded down, using a brute-force approach by iterating from 2 up to sqrt(X), checking if each number divides evenly into X and adding it to the output list only once (to avoid duplicates).
+
+Linear Class  
+
+			Input Parameters: Two numbers 'a' and 'b'.
+
+			Output Value X = g(a, b) where gi is defined as follows: 
+
+			1. Return a string representing the linear expression "a + b". This can be evaluated later to compute an actual numerical value if needed for use in f(Y).
+
+Exponent Class  
+
+			Input Parameters: A single number 'a'.
+
+			Output Value X = g(a) where gi is defined as follows: 
+
+			1. Return a string representing the exponential expression "2^a". This can be evaluated later to compute an actual numerical value if needed for use in f(Y).
+
+Random Class  
+
+			Input Parameters: Two numbers 'a' and 'b', specifying lower and upper bounds of random number generation range (inclusive). 
+
+			Output Value X = g(a, b) where gi is defined as follows:
+
+			1. Generate a pseudo-random integer between a and b inclusive using built-in functions like randint() or uniform().
+
+Dictionary Class  
+
+			Input Parameters: Two lists 'a' and 'b', specifying the keys and values for dictionary generation respectively. 
+
+			Output Value X = g(a, b) where gi is defined as follows:
+
+			1. Create a new dictionary D with each element in list 'a' mapped to its corresponding element in list 'b'.
+
+===========================================================================

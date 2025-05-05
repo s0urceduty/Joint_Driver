@@ -1,0 +1,56 @@
+Expanded Additions to Joint Driver Framework
+
+Weighting Class
+- Input: List of values V, weight set W, optional bias factor B
+- Output: Weighted sum ∑(V[i] * W[i]) + B
+- Optimation Feature: Supports adaptive weight rebalancing with bias adjustments to favor certain variables dynamically.
+- Use Case: Resource allocation in dynamic systems where priorities shift over time.
+
+Threshold Class
+- Input: Set of conditions C, threshold T, sensitivity factor S
+- Output: List of values satisfying C > T ± S
+- Optimation Feature: Adjusts T dynamically based on historical performance, allowing for gradual threshold relaxation or tightening.
+- Use Case: Risk assessment models where threshold adjustments help refine acceptable risk levels.
+
+Trade-off Class
+- Input: Competing variables (A, B), balance factor α, trade sensitivity factor β
+- Output: X = αA + (1-α)B, with α adjusted based on β
+- Optimation Feature: Introduces dynamic feedback where β modifies trade-off decisions based on observed performance metrics.
+- Use Case: Financial portfolio balancing between risk and return, where β accounts for changing market conditions.
+
+Adaptive Scaling Class
+- Input: Value X, scaling factor S, historical trend H
+- Output: Adjusted value X' = X * S * H
+- Optimation Feature: Incorporates historical data to refine scaling trends, preventing over-adjustment.
+- Use Case: Demand forecasting where scaling adapts to past trends to prevent overcorrections.
+
+Incremental Adjustment Class
+- Input: Base value X, step factor Δ
+- Output: Adjusted value X' = X + Δ
+- Optimation Feature: Supports gradual iterative refinements, preventing abrupt changes.
+- Use Case: Machine learning hyperparameter tuning where small adjustments optimize performance.
+
+Multi-Variable Weighting Class
+- Input: Set of variables {V1, V2, ..., Vn}, corresponding weights {W1, W2, ..., Wn}, interaction matrix M
+- Output: ∑(Vi * Wi) + Mij(Vi, Vj)
+- Optimation Feature: Supports dynamic weight redistribution based on interactions between variables.
+- Use Case: Supply chain logistics optimization where variable interdependencies affect efficiency.
+
+Probability-Weighted Decision Class
+- Input: Set of choices C, probability distribution P
+- Output: Choice selected based on P
+- Optimation Feature: Adjusts P dynamically based on past decision outcomes.
+- Use Case: AI-driven decision-making where probabilities shift based on learned behavior.
+
+Exploratory Search Class
+- Input: Initial solution S, search space D, exploration factor E
+- Output: Set of refined candidate solutions {S'}
+- Optimation Feature: Introduces exploration-exploitation balance to find improved solutions.
+- Use Case: Autonomous robotics navigation, where exploration finds optimal movement paths.
+
+Key Enhancements
+1. Dynamic Rebalancing – Introduces adaptive mechanisms that refine variable relationships over time.
+2. Probabilistic Adaptation – Incorporates probabilistic models for decision-making under uncertainty.
+3. Multi-Factor Analysis – Enhances trade-off analysis with multi-variable interaction effects.
+4. Historical Learning – Uses past data trends to improve scaling and threshold adjustments.
+5. Exploration-Exploitation Balance – Supports systems that require continuous refinement and innovation.
