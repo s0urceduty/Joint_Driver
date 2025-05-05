@@ -1,0 +1,33 @@
+Joint Driver Framework
+│
+├── Core Equation Layer
+│   └── X = f(Y; {g_i}, {C})  ← Aggregate function over operation classes
+│
+├── Operation Class Layer
+│   ├── List Class
+│   ├── Prime Class
+│   ├── Float Class
+│   ├── Power Class
+│   ├── Array Class
+│   ├── Geater Class
+│   ├── Linear Class
+│   ├── Exponent Class
+│   ├── Random Class
+│   ├── Dictionary Class
+│
+├── Extended Operation Class Layer (Optimation-Enhanced)
+│   ├── Weighting Class
+│   ├── Threshold Class
+│   ├── Trade-off Class
+│   ├── Adaptive Scaling Class
+│   ├── Incremental Adjustment Class
+│   ├── Multi-Variable Weighting Class
+│   ├── Probability-Weighted Decision Class
+│   ├── Exploratory Search Class
+│
+└── Optimation Enhancements Layer
+    ├── Dynamic Rebalancing
+    ├── Probabilistic Adaptation
+    ├── Multi-Factor Analysis
+    ├── Historical Learning
+    └── Exploration-Exploitation Balance
