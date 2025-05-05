@@ -1,4 +1,4 @@
-#### Adapt and compute values on demand as needed while dynamically adjusting weights based on problem-specific criteria.
+Adapt and compute values on demand as needed while dynamically adjusting weights based on problem-specific criteria.
 
 ![Joint Driver](https://github.com/user-attachments/assets/9672cd11-cbc6-4e51-8779-3abec8babc25)
 
