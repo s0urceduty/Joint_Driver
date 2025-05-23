@@ -33,3 +33,7 @@ Moreover, Joint Driver introduces a powerful synthesis of mathematical structure
 [Joint Driver](https://chatgpt.com/g/g-67c344a88d508191a745afb345541d4c-joint-driver)
 <br>
 [Optimation Math](https://chatgpt.com/g/g-6782f9139b9c8191af0f5656d669a80b-optimation-math)
+<br>
+[Programming](https://github.com/sourceduty/Programming)
+<br>
+[PyPi Studio](https://chatgpt.com/g/g-682fb476dd048191800bdbc557bd7e9a-pypi-studio)
