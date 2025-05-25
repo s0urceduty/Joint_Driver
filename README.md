@@ -4,6 +4,26 @@
 Adapt and compute values on demand as needed while dynamically adjusting weights based on problem-specific criteria.
 #
 
+X = f(Y) 
+
+Where f is a linear combination of the outputs (values created by applying input parameters to each operation class within a Joint Driver model), with weights determined based on their importance or contribution to the overall goal/objective being optimized for that specific application instance. 
+
+The values are generated as follows:
+
+Operation Class i = g_i(Input Parameters)
+
+Where gi is a function defining how each individual operation class creates its value output (Xi) given certain input parameters from other models, variables Y1,...,Yn or constants C1,...,Ck.
+
+The final equation becomes:  X = f(Y; {g_i}, {C}) where the sum of all Xi terms is weighted by coefficients determined based on their relative importance to optimizing some objective function. This allows us to create a flexible framework that can be adapted to any problem domain simply by defining appropriate functions gi and weights for each operation class within Joint Driver, with inputs Y1,...,Yn coming from other models or variables as needed depending on the specific application at hand.
+
+The key advantages of Joint Driver are:
+
+1. Flexibility: The model is highly adaptable to different domains/problems just by changing the definitions of {g_i} and their weights in f(Y) 
+2. Efficiency: Only computes values for Xi when actually needed, avoiding precomputing large datasets beforehand like traditional methods  
+3. Scalability: Can handle very high dimensional input spaces as long as we can define appropriate gi functions to map them into the desired output space
+
+#
+
 The Joint Driver framework is a highly adaptable and modular mathematical architecture designed for modeling complex dynamic systems by representing the final output \( X \) as a function \( f(Y; \{g_i\}, \{C\}) \). Here, \( Y \) represents input parameters (which may include constants, variables, or values from other models), while each \( g_i \) is a domain-specific operation class that transforms inputs into intermediate values \( X_i \), all weighted appropriately. These weights, determined according to the relevance of each \( X_i \) in the context of the system’s goal, are central to tuning the model's behavior. This structure makes the Joint Driver inherently modular and scalable, enabling it to accommodate additional classes or transformations as needed without altering the core framework.
 
 At the heart of Joint Driver’s strength is its suite of operation classes such as List, Prime, Float, Power, Array, and Linear, each with unique transformation logic tailored to specific computational or domain-based needs. For instance, the Prime class uses a sieve-based approach to output all primes up to a given number, while the Array class returns all integers within a defined range. These classes act as functional building blocks, translating raw input data into meaningful intermediates used to compose the final output. By calling only the relevant \( g_i \) functions during execution, the model avoids unnecessary computations, improving efficiency and making it suitable for high-dimensional spaces.
