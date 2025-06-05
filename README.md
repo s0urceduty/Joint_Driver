@@ -2,7 +2,7 @@
 
 #
 
-The Joint Driver framework is a highly adaptable and modular mathematical architecture designed for modeling complex dynamic systems by representing the final output \( X \) as a function \( f(Y; \{g_i\}, \{C\}) \). Here, \( Y \) represents input parameters (which may include constants, variables, or values from other models), while each \( g_i \) is a domain-specific operation class that transforms inputs into intermediate values \( X_i \), all weighted appropriately. These weights, determined according to the relevance of each \( X_i \) in the context of the system’s goal, are central to tuning the model's behavior. This structure makes the Joint Driver inherently modular and scalable, enabling it to accommodate additional classes or transformations as needed without altering the core framework.
+The [Joint Driver](https://chatgpt.com/g/g-67c344a88d508191a745afb345541d4c-joint-driver) framework is a highly adaptable and modular mathematical architecture designed for modeling complex dynamic systems by representing the final output \( X \) as a function \( f(Y; \{g_i\}, \{C\}) \). Here, \( Y \) represents input parameters (which may include constants, variables, or values from other models), while each \( g_i \) is a domain-specific operation class that transforms inputs into intermediate values \( X_i \), all weighted appropriately. These weights, determined according to the relevance of each \( X_i \) in the context of the system’s goal, are central to tuning the model's behavior. This structure makes the Joint Driver inherently modular and scalable, enabling it to accommodate additional classes or transformations as needed without altering the core framework.
 
 At the heart of Joint Driver’s strength is its suite of operation classes such as List, Prime, Float, Power, Array, and Linear, each with unique transformation logic tailored to specific computational or domain-based needs. For instance, the Prime class uses a sieve-based approach to output all primes up to a given number, while the Array class returns all integers within a defined range. These classes act as functional building blocks, translating raw input data into meaningful intermediates used to compose the final output. By calling only the relevant \( g_i \) functions during execution, the model avoids unnecessary computations, improving efficiency and making it suitable for high-dimensional spaces.
 
@@ -32,8 +32,6 @@ Parsing Joint Driver with [RivalComp](https://chatgpt.com/g/g-6841c275ce28819191
 
 #
 
-[Joint Driver](https://chatgpt.com/g/g-67c344a88d508191a745afb345541d4c-joint-driver)
-<br>
 [Optimation Math](https://chatgpt.com/g/g-6782f9139b9c8191af0f5656d669a80b-optimation-math)
 <br>
 [Programming](https://github.com/sourceduty/Programming)
