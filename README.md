@@ -1,4 +1,4 @@
-![Joint Driver](https://github.com/user-attachments/assets/9672cd11-cbc6-4e51-8779-3abec8babc25)
+![Joint Driver](https://github.com/user-attachments/assets/6a31a6fa-3206-404b-b404-25c9aa13e9a1)
 
 The [Joint Driver](https://chatgpt.com/g/g-67c344a88d508191a745afb345541d4c-joint-driver) framework is a highly adaptable and modular mathematical architecture designed for modeling complex dynamic systems by representing the final output \( X \) as a function \( f(Y; \{g_i\}, \{C\}) \). Here, \( Y \) represents input parameters (which may include constants, variables, or values from other models), while each \( g_i \) is a domain-specific operation class that transforms inputs into intermediate values \( X_i \), all weighted appropriately. These weights, determined according to the relevance of each \( X_i \) in the context of the system’s goal, are central to tuning the model's behavior. This structure makes the Joint Driver inherently modular and scalable, enabling it to accommodate additional classes or transformations as needed without altering the core framework.
 
